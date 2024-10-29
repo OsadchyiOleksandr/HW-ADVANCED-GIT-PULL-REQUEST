@@ -14,14 +14,14 @@ public class Main {
     TemperatureConvertor convertor = new TemperatureConvertor();
         View.toDisplay("Please chose:" +
                 "\n\t1.Convert Fahrenheit To Celsius" +
-                "\n\t2.Convert * to *");
+                "\n\t2.Convert Celsius to Fahrenheit");
         int chose = Support.getIntFromUser("");
         switch (chose) {
             case 1:
                 convertor.fahrenheitToCelsius(Support.getDoubleFromUser("Please enter amount of Fahrenheit --->"));
                 break;
             case 2:
-//                convertor.kmsToMiles(Support.getDoubleFromUser("Please enter amount of  --->"));
+                convertor.celsiusToFahrenheit(Support.getDoubleFromUser("Please enter amount of Celsius --->"));
                 break;
             default:
                 System.out.println("No such conversion. Bye");
