@@ -1,5 +1,7 @@
 package app;
 
+import app.core.Support;
+import app.core.TemperatureConvertor;
 import app.core.View;
 
 public class Main {
@@ -9,20 +11,20 @@ public class Main {
     }
 
     public static void runApp(){
-    /*    DistanceConvertor convertor = new DistanceConvertor();
+    TemperatureConvertor convertor = new TemperatureConvertor();
         View.toDisplay("Please chose:" +
-                "\n\t1.Convert * to *" +
+                "\n\t1.Convert Fahrenheit To Celsius" +
                 "\n\t2.Convert * to *");
         int chose = Support.getIntFromUser("");
         switch (chose) {
             case 1:
-                convertor.milesToKms(Support.getDoubleFromUser("Please enter amount of  --->"));
+                convertor.fahrenheitToCelsius(Support.getDoubleFromUser("Please enter amount of Fahrenheit --->"));
                 break;
             case 2:
-                convertor.kmsToMiles(Support.getDoubleFromUser("Please enter amount of  --->"));
+//                convertor.kmsToMiles(Support.getDoubleFromUser("Please enter amount of  --->"));
                 break;
             default:
                 System.out.println("No such conversion. Bye");
-        }*/
+        }
     }
 }
